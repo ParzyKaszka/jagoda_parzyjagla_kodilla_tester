@@ -11,7 +11,9 @@ public class Loops {
 
         int[] numbers = new int[] {1, 2, 3, 4, 5};
             int result = 0;
+        System.out.println("Rozmiar tablicy " + numbers.length);
         for (int i = 0; i < numbers.length; i++){
+            System.out.println("i" + i);
             result = result + numbers[i];
         }
         System.out.println(result);
