@@ -5,6 +5,5 @@ public class SimpleArray {
         System.out.println(bestPathologist);
         int howManyBooks = bestBooks.length;
         System.out.println("Jest tutaj aż " + howManyBooks + " zajebistych książek");
-
     }
 }

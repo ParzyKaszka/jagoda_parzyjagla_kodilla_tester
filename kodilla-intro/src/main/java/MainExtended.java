@@ -6,7 +6,6 @@ public class MainExtended {
         char witchOne = '3';
         int age = 48;
         String kindOfMusic = "rap";
-
         System.out.println(firstName);
         System.out.println(secondName);
         System.out.println(lastName);

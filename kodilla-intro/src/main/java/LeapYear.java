@@ -4,7 +4,6 @@ public class LeapYear {
         int four = year % 4;
         int fourHundred = year % 400;
         int hundered = year % 100;
-
         if (four > 0) {
             System.out.println("Rok nie jest przestępny");
         } else if (four == 0 && hundered > 0) {
@@ -14,9 +13,5 @@ public class LeapYear {
         } else {
             System.out.println("Rok nie jest przestępny");
         }
-
-
     }
-
-
 }

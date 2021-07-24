@@ -2,7 +2,6 @@ public class DebugExample {
     public static void main(String[] args) {
         int firstNumber = 11;
         int secondNumber = 12;
-
         System.out.println(firstNumber);
         System.out.println(secondNumber);
 
@@ -11,7 +10,6 @@ public class DebugExample {
         } else {
             sumAndDisplay(firstNumber, secondNumber);
         }
-
     }
 
     private static void sumAndDisplay(int a, int b) {
@@ -21,8 +19,6 @@ public class DebugExample {
 
     private static void subtractAndDisplay(int a, int b) {
         int result = a - b;
-
         System.out.println(result);
     }
-    }
-
+}
