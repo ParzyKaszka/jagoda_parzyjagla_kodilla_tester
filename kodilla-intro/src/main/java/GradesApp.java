@@ -12,7 +12,7 @@ public class GradesApp {
         grades.add(6);
         grades.add(3);
         grades.add(3);
-        System.out.println("Średnia wszystkich ocen to " + grades.getAvgGrade()); //oczekiwana średnia 3.7
+        System.out.println("Średnia wszystkich ocen to " + grades.getAvgGrade());
         System.out.println("Ostatnia dodana ocena to " + grades.getLastAdded());
     }
 }

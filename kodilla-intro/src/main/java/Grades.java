@@ -3,18 +3,16 @@ public class Grades {
     private int index;
 
     public Grades() {
-        this.grades = new int[10]; //w tablicy może być 10 wartości typu int
-        this.index = 0; // np. 3 dodane oceny [ 2, 5, 6, pusto, pusto, pusto...]
+        this.grades = new int[10];
+        this.index = 0;
     }
 
-    public void add ( int dodawanaOcena){ //metoda która ma dodać ocenę do tablicy (typu int)
-        if (this.index == 10) { // jeśli dojdzie do końca tablicy, stop
+    public void add ( int dodawanaOcena){
+        if (this.index == 10) {
             return;
         }
-        //[pusto, pusto, pusto, pusto, pusto, pusto, pusto, pusto, pusto, pusto]
 
-        this.grades[this.index] = dodawanaOcena; //dodanie oceny do poszczególnego indexu
-        // po każdym kolejnym użyciu metody, wartość inexu będzie zwiększać się o 1
+        this.grades[this.index] = dodawanaOcena;
         this.index++;
     }
 
