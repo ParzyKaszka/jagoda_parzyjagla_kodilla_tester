@@ -5,6 +5,7 @@ public class User {
         this.name = name;
         this.age = age;
     }
+
     public String getName(){return name;}
     public float getAge(){return age;}
 
@@ -36,5 +37,3 @@ public class User {
             }
         }
     }
-
-
