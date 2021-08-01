@@ -7,6 +7,7 @@ public class Calculator {
     }
 
     public double add(double a, double b) {
+
         return a + b;
     }
 
@@ -15,6 +16,8 @@ public class Calculator {
     }
 
     public double circleArea(double r) {
+        String name = UserDialogs.getUsername();
+        System.out.println("Hi, " + name + ". Thank you for using our software");
         return PI * r * r;
     }
 
