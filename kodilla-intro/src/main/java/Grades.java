@@ -7,12 +7,12 @@ public class Grades {
         this.index = 0;
     }
 
-    public void add(int dodawanaOcena) {
+    public void add(int addGrade) {
         if (this.index == 10) {
             return;
         }
 
-        this.grades[this.index] = dodawanaOcena;
+        this.grades[this.index] = addGrade;
         this.index++;
     }
 
@@ -21,11 +21,11 @@ public class Grades {
     }
 
     public float getAvgGrade() {
-        float sumaOcen = 0;
+        float gradesSum = 0;
         for (int i = 0; i < this.index; i++) {
-            sumaOcen = sumaOcen + this.grades[i];
+            gradesSum = gradesSum + this.grades[i];
         }
-        return sumaOcen / this.index;
+        return gradesSum / this.index;
     }
 
     public int getLastAdded() {
