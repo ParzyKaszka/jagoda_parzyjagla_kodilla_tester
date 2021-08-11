@@ -12,10 +12,10 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Chief chief = new Chief();
-        Manager manager = new Manager();
-        Instructor instructor = new Instructor();
-        RestaurantWorker restaurantWorker = new RestaurantWorker();
+        Chief chief = new Chief(5000, "restaurant management, hiring employees");
+        Manager manager = new Manager(3000, "employee management, change management");
+        Instructor instructor = new Instructor(2500, "staff training, kitchen management");
+        RestaurantWorker restaurantWorker = new RestaurantWorker(2100, "Work in the kitchen, customer service");
 
         Person bogusia = new Person("Bogusia", 38, chief);
         Person karolina = new Person("Karolina", 27, manager);
