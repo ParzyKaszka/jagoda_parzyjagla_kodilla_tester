@@ -22,8 +22,8 @@ public class Application {
             System.out.println("Metoda odejmowania nie działa poprawnie dla liczb " + b + " i " + a);
         }
 
-        int squaredResult = calculator.squared(a);
-        boolean correct3 = ResultChacker.assertEquals(25, squaredResult);
+        double squaredResult = calculator.power(a, 2);
+        boolean correct3 = ResultChacker.assertEquals(25, (int) squaredResult);
         if (correct3) {
             System.out.println("Metoda podnosząca do kwadratu działa poprawnie dla liczby " + a);
         } else {

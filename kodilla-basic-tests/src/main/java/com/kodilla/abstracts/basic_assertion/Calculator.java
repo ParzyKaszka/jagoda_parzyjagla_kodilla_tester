@@ -1,16 +1,20 @@
 package com.kodilla.abstracts.basic_assertion;
 
+import java.lang.Math;
+
+import static java.lang.Math.*;
+
 public class Calculator {
 
     public int sum(int a, int b) {
-        return a + b;
+        return Math.addExact(a, b);
     }
 
     public int subtract(int a, int b) {
-        return a - b;
+        return Math.subtractExact(a, b);
     }
 
-    public int squared(int a) {
-        return a * a;
+    public double power(double a, double b) {
+        return Math.pow(a, b);
     }
 }
