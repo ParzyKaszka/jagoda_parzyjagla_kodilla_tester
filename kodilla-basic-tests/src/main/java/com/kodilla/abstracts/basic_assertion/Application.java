@@ -7,7 +7,7 @@ public class Application {
         int b = 8;
 
         int sumResult = calculator.sum(a, b);
-        boolean correct = ResultChacker.assertEquals(13, sumResult);
+        boolean correct = ResultChecker.assertEquals(13, sumResult);
         if (correct) {
             System.out.println("Metoda sum działa poprawnie dla liczb " + a + " i " + b);
         } else {
@@ -15,7 +15,7 @@ public class Application {
         }
 
         int subtractResult = calculator.subtract(b, a);
-        boolean correct2 = ResultChacker.assertEquals(3, subtractResult);
+        boolean correct2 = ResultChecker.assertEquals(3, subtractResult);
         if (correct2) {
             System.out.println("Metoda odejmowania działa poprawnie dla liczb " + b + " i " + a);
         } else {
@@ -23,7 +23,7 @@ public class Application {
         }
 
         double squaredResult = calculator.power(a, 2);
-        boolean correct3 = ResultChacker.assertEquals(25, (int) squaredResult);
+        boolean correct3 = ResultChecker.assertEquals(25, (int) squaredResult);
         if (correct3) {
             System.out.println("Metoda podnosząca do kwadratu działa poprawnie dla liczby " + a);
         } else {
