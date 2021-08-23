@@ -34,6 +34,5 @@ public class CashMachineTestSuite {
         assertEquals(-96.25, averageOutboundTransactions, 0.01);
 
         System.out.println(cashMachine.report());
-
     }
 }
