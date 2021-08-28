@@ -5,7 +5,9 @@ import com.kodilla.collections.interfaces.homework.Chevrolet;
 import com.kodilla.collections.interfaces.homework.Dodge;
 import com.kodilla.collections.interfaces.homework.Toyota;
 
+
 public class CarUtils {
+
     public static void describeCar(Car car) {
         System.out.println("--------");
         System.out.println("Name: " + getName(car));
