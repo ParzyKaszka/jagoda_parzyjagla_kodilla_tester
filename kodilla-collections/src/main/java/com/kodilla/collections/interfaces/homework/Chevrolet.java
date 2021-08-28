@@ -1,11 +1,11 @@
 package com.kodilla.collections.interfaces.homework;
 
 public class Chevrolet implements Car {
-
     private int speed;
+    private int increase;
 
-    public Chevrolet(int speed) {
-        this.speed = speed;
+    public Chevrolet(int increase) {
+        this.increase = increase;
     }
 
     @Override
@@ -13,13 +13,17 @@ public class Chevrolet implements Car {
         return speed;
     }
 
+    public int getIncrease() {
+        return increase;
+    }
+
     @Override
     public void increaseSpeed() {
-        speed += 50;
+        speed += 60;
     }
 
     @Override
     public void decreaseSpeed() {
-        speed -= 30;
+        speed -= 40;
     }
 }

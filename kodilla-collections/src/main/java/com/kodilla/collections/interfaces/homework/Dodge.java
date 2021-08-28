@@ -1,10 +1,16 @@
 package com.kodilla.collections.interfaces.homework;
 
 public class Dodge implements Car {
-    private int speed;
+    private int speed = 0;
+    private int increase;
 
-    public Dodge(int speed) {
-        this.speed = speed;
+    public Dodge(int increase) {
+        this.increase = increase;
+    }
+
+    @Override
+    public int getIncrease() {
+        return increase;
     }
 
     public int getSpeed() {
