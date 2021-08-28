@@ -21,7 +21,7 @@ public class ShapeApplication {
     public static Shape drawShape(){
         Random random = new Random();
         int drawShapeKind = random.nextInt(3); //wylosuj rodzaj kształtu (0, 1 lub 2)
-        double a = random.nextDouble() * 100 + 1; //wymiar kształtu równy z przedziału między 0(włącznie) a 101
+        double a = random.nextDouble() * 100 + 1;
         double b = random.nextDouble() * 100 + 1;
         double c = random.nextDouble() * 100 + 1;
         if (drawShapeKind == 0)     //0- circle, 1- square, 2- triangle
