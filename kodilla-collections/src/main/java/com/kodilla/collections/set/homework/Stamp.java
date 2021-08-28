@@ -6,9 +6,9 @@ public class Stamp {
     private String nameOfStamp;
     private double stampWidth;
     private double stampHeight;
-    private String stampedOrNotStamped;
+    private boolean stampedOrNotStamped;
 
-    public Stamp(String nameOfStamp, double stampWidth, double stampHeight, String stampedOrNotStamped) {
+    public Stamp(String nameOfStamp, double stampWidth, double stampHeight, boolean stampedOrNotStamped) {
         this.nameOfStamp = nameOfStamp;
         this.stampWidth = stampWidth;
         this.stampHeight = stampHeight;
