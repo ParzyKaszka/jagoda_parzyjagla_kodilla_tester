@@ -16,13 +16,12 @@ public class WizardsManager extends WizardsRepository {
     }
 
     public String castSpell(String spell){
-        String action = new String();
         for(Spell spell2 : spells){
             if(spell2.getSpell().equals(spell)){
-                action = spell2.getAction();
+                spell = spell2.getAction();
             }
         }
-        return action;
+        return spell;
     }
 
     @Override
