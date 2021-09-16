@@ -1,5 +1,6 @@
 package HarryPotter;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Wizard {
@@ -7,6 +8,7 @@ public class Wizard {
     private int age;
     private String home;
     private int health;
+    public List<Spell> spells = BookOfSpells.getBookOfSpells();
 
     public Wizard(String name, int age, String home, int health) {
         this.name = name;
@@ -44,6 +46,15 @@ public class Wizard {
 
     public void setHome(String home){
         this.home = home;
+    }
+
+    public void castSpell(String spell){
+        for(Spell spell2 : spells){
+            if(spell2.getSpell().equals(spell)){
+                spell = spell2.getAction();
+                System.out.println(spell);
+            }
+        }
     }
 
     @Override
